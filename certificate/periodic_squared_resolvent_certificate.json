@@ -1,0 +1,939 @@
+{
+  "schema": "coarse-inverse-arb-v1",
+  "status": "PASS: rigorous Arb enclosure",
+  "grid_size": 4096,
+  "precision_bits": 96,
+  "block_rows": 128,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "python_flint": "0.9.0",
+    "flint": "3.6.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "flint_threads": 4
+  },
+  "pi": {
+    "lower": {
+      "numerator": "1711071886550596401052327862175270608234798687175596045891863355149564059431025741677300663301488044886924700750486004",
+      "denominator": "544651097460204324729505646356491148072961547248870053795740492422760518540468532844300852957530878484249114990234375"
+    },
+    "upper": {
+      "numerator": "48677225812655926046638412773495119805002501124642807326089415979310491527162261560047969239954403496009632679447288",
+      "denominator": "15494442208169185197833488127471474862459734848469281655049426658969308006306986325029129147878848016262054443359375"
+    },
+    "identity": "16 atan(1/5) - 4 atan(1/239)",
+    "terms": [
+      32,
+      10
+    ]
+  },
+  "series": {
+    "last_k": 24,
+    "zeta_modulus_upper": 6,
+    "S_tail_bound": {
+      "numerator": "404156666704311",
+      "denominator": "765459059074989504969624618778812255859375"
+    },
+    "T_tail_bound": {
+      "numerator": "179625185201916",
+      "denominator": "244817221133988643368261494544391511328125"
+    },
+    "component_radius_used": {
+      "numerator": "1",
+      "denominator": "38685626227668133590597632"
+    }
+  },
+  "B_squared_frobenius_sum": {
+    "lower": {
+      "numerator": "7480052634056755375277880129315",
+      "denominator": "20282409603651670423947251286016"
+    },
+    "upper": {
+      "numerator": "7480052634056755375277954740035",
+      "denominator": "20282409603651670423947251286016"
+    }
+  },
+  "B_square_squared_frobenius_sum": {
+    "lower": {
+      "numerator": "1425809985640047368928636463651",
+      "denominator": "162259276829213363391578010288128"
+    },
+    "upper": {
+      "numerator": "1425809985640047368928652978715",
+      "denominator": "162259276829213363391578010288128"
+    }
+  },
+  "blocks": [
+    {
+      "rows": [
+        0,
+        128
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "55606386505575892864319276357",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "55606386505575892864319805731",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "13036537393384670348607503339",
+          "denominator": "20282409603651670423947251286016"
+        },
+        "upper": {
+          "numerator": "13036537393384670348607650411",
+          "denominator": "20282409603651670423947251286016"
+        }
+      }
+    },
+    {
+      "rows": [
+        128,
+        256
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "60851519831271625086564320235",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "60851519831271625086564937965",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "11194381447078925453130312475",
+          "denominator": "20282409603651670423947251286016"
+        },
+        "upper": {
+          "numerator": "22388762894157850906260886013",
+          "denominator": "40564819207303340847894502572032"
+        }
+      }
+    },
+    {
+      "rows": [
+        256,
+        384
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "12719164735122208645118401965",
+          "denominator": "633825300114114700748351602688"
+        },
+        "upper": {
+          "numerator": "12719164735122208645118535081",
+          "denominator": "633825300114114700748351602688"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "8426414612708409106517827573",
+          "denominator": "20282409603651670423947251286016"
+        },
+        "upper": {
+          "numerator": "33705658450833636426071703055",
+          "denominator": "81129638414606681695789005144064"
+        }
+      }
+    },
+    {
+      "rows": [
+        384,
+        512
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "10456242015824874195300099041",
+          "denominator": "633825300114114700748351602688"
+        },
+        "upper": {
+          "numerator": "5228121007912437097650100567",
+          "denominator": "316912650057057350374175801344"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "26654778294349314798836429705",
+          "denominator": "81129638414606681695789005144064"
+        },
+        "upper": {
+          "numerator": "3331847286793664349854594779",
+          "denominator": "10141204801825835211973625643008"
+        }
+      }
+    },
+    {
+      "rows": [
+        512,
+        640
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "2191717026311530516255408841",
+          "denominator": "158456325028528675187087900672"
+        },
+        "upper": {
+          "numerator": "35067472420984488260086889513",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "43854802285651807749769393659",
+          "denominator": "162259276829213363391578010288128"
+        },
+        "upper": {
+          "numerator": "43854802285651807749769919215",
+          "denominator": "162259276829213363391578010288128"
+        }
+      }
+    },
+    {
+      "rows": [
+        640,
+        768
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "3748031578470678311605545463",
+          "denominator": "316912650057057350374175801344"
+        },
+        "upper": {
+          "numerator": "29984252627765426492844676905",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "18553705968886395606720960207",
+          "denominator": "81129638414606681695789005144064"
+        },
+        "upper": {
+          "numerator": "9276852984443197803360588445",
+          "denominator": "40564819207303340847894502572032"
+        }
+      }
+    },
+    {
+      "rows": [
+        768,
+        896
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "52259960427813327883531848471",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "52259960427813327883532405957",
+          "denominator": "5070602400912917605986812821504"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "32140593728914322971857961083",
+          "denominator": "162259276829213363391578010288128"
+        },
+        "upper": {
+          "numerator": "16070296864457161485929178439",
+          "denominator": "81129638414606681695789005144064"
+        }
+      }
+    },
+    {
+      "rows": [
+        896,
+        1024
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "23216079979349741426508310861",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "11608039989674870713254277715",
+          "denominator": "1267650600228229401496703205376"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "56902793608593790130774955655",
+          "denominator": "324518553658426726783156020576256"
+        },
+        "upper": {
+          "numerator": "56902793608593790130775677031",
+          "denominator": "324518553658426726783156020576256"
+        }
+      }
+    },
+    {
+      "rows": [
+        1024,
+        1152
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "21054381334175160561713456671",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "5263595333543790140428417113",
+          "denominator": "633825300114114700748351602688"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "6436038814972390747215973991",
+          "denominator": "40564819207303340847894502572032"
+        },
+        "upper": {
+          "numerator": "3218019407486195373608027895",
+          "denominator": "20282409603651670423947251286016"
+        }
+      }
+    },
+    {
+      "rows": [
+        1152,
+        1280
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "19521663078880355586126316201",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "9760831539440177793063252673",
+          "denominator": "1267650600228229401496703205376"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "47675025636898842495556364773",
+          "denominator": "324518553658426726783156020576256"
+        },
+        "upper": {
+          "numerator": "47675025636898842495556963369",
+          "denominator": "324518553658426726783156020576256"
+        }
+      }
+    },
+    {
+      "rows": [
+        1280,
+        1408
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "37077510776952972396608480199",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "18538755388476486198304423161",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "22619746591381327268649921173",
+          "denominator": "162259276829213363391578010288128"
+        },
+        "upper": {
+          "numerator": "22619746591381327268650200435",
+          "denominator": "162259276829213363391578010288128"
+        }
+      }
+    },
+    {
+      "rows": [
+        1408,
+        1536
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "9029185731822158752954376319",
+          "denominator": "1267650600228229401496703205376"
+        },
+        "upper": {
+          "numerator": "18058371463644317505908932657",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "1376616226596980210142437873",
+          "denominator": "10141204801825835211973625643008"
+        },
+        "upper": {
+          "numerator": "2753232453193960420284909363",
+          "denominator": "20282409603651670423947251286016"
+        }
+      }
+    },
+    {
+      "rows": [
+        1536,
+        1664
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "72233485854577270023635014505",
+          "denominator": "10141204801825835211973625643008"
+        },
+        "upper": {
+          "numerator": "72233485854577270023635729551",
+          "denominator": "10141204801825835211973625643008"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "44051719251103366724558012385",
+          "denominator": "324518553658426726783156020576256"
+        },
+        "upper": {
+          "numerator": "44051719251103366724558549407",
+          "denominator": "324518553658426726783156020576256"
+        }
+      }
+    },
+    {
+      "rows": [
+        1664,
+        1792
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "18538755388476486198304241499",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "18538755388476486198304422765",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "45239493182762654537299847513",
+          "denominator": "324518553658426726783156020576256"
+        },
+        "upper": {
+          "numerator": "45239493182762654537300399177",
+          "denominator": "324518553658426726783156020576256"
+        }
+      }
+    },
+    {
+      "rows": [
+        1792,
+        1920
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "39043326157760711172252637413",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "39043326157760711172253008937",
+          "denominator": "5070602400912917605986812821504"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "11918756409224710623889093251",
+          "denominator": "81129638414606681695789005144064"
+        },
+        "upper": {
+          "numerator": "23837512818449421247778480403",
+          "denominator": "162259276829213363391578010288128"
+        }
+      }
+    },
+    {
+      "rows": [
+        1920,
+        2048
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "1315898833385947535107091249",
+          "denominator": "158456325028528675187087900672"
+        },
+        "upper": {
+          "numerator": "2631797666771895070214208413",
+          "denominator": "316912650057057350374175801344"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "51488310519779125977727804853",
+          "denominator": "324518553658426726783156020576256"
+        },
+        "upper": {
+          "numerator": "51488310519779125977728442537",
+          "denominator": "324518553658426726783156020576256"
+        }
+      }
+    },
+    {
+      "rows": [
+        2048,
+        2176
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "23216079979349741426508317921",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "23216079979349741426508553111",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "56902793608593790130774972643",
+          "denominator": "324518553658426726783156020576256"
+        },
+        "upper": {
+          "numerator": "56902793608593790130775671405",
+          "denominator": "324518553658426726783156020576256"
+        }
+      }
+    },
+    {
+      "rows": [
+        2176,
+        2304
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "6532495053476665985441483161",
+          "denominator": "633825300114114700748351602688"
+        },
+        "upper": {
+          "numerator": "13064990106953331970883099921",
+          "denominator": "1267650600228229401496703205376"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "64281187457828645943715943021",
+          "denominator": "324518553658426726783156020576256"
+        },
+        "upper": {
+          "numerator": "64281187457828645943716707207",
+          "denominator": "324518553658426726783156020576256"
+        }
+      }
+    },
+    {
+      "rows": [
+        2304,
+        2432
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "59968505255530852985688748419",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "59968505255530852985689346951",
+          "denominator": "5070602400912917605986812821504"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "37107411937772791213441932557",
+          "denominator": "162259276829213363391578010288128"
+        },
+        "upper": {
+          "numerator": "18553705968886395606721174819",
+          "denominator": "81129638414606681695789005144064"
+        }
+      }
+    },
+    {
+      "rows": [
+        2432,
+        2560
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "35067472420984488260086554199",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "35067472420984488260086885465",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "43854802285651807749769413213",
+          "denominator": "162259276829213363391578010288128"
+        },
+        "upper": {
+          "numerator": "43854802285651807749769912823",
+          "denominator": "162259276829213363391578010288128"
+        }
+      }
+    },
+    {
+      "rows": [
+        2560,
+        2688
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "5228121007912437097650051505",
+          "denominator": "316912650057057350374175801344"
+        },
+        "upper": {
+          "numerator": "20912484031649748390600399521",
+          "denominator": "1267650600228229401496703205376"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "26654778294349314798836445227",
+          "denominator": "81129638414606681695789005144064"
+        },
+        "upper": {
+          "numerator": "13327389147174657399418376437",
+          "denominator": "40564819207303340847894502572032"
+        }
+      }
+    },
+    {
+      "rows": [
+        2688,
+        2816
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "50876658940488834580473633473",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "50876658940488834580474131771",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "33705658450833636426071331831",
+          "denominator": "81129638414606681695789005144064"
+        },
+        "upper": {
+          "numerator": "33705658450833636426071695937",
+          "denominator": "81129638414606681695789005144064"
+        }
+      }
+    },
+    {
+      "rows": [
+        2816,
+        2944
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "60851519831271625086564338911",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "60851519831271625086564931513",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "44777525788315701812521284499",
+          "denominator": "81129638414606681695789005144064"
+        },
+        "upper": {
+          "numerator": "44777525788315701812521760639",
+          "denominator": "81129638414606681695789005144064"
+        }
+      }
+    },
+    {
+      "rows": [
+        2944,
+        3072
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "55606386505575892864319227673",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "55606386505575892864319821835",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "13036537393384670348607502741",
+          "denominator": "20282409603651670423947251286016"
+        },
+        "upper": {
+          "numerator": "6518268696692335174303825333",
+          "denominator": "10141204801825835211973625643008"
+        }
+      }
+    },
+    {
+      "rows": [
+        3072,
+        3200
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "64304368648212549044863853231",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "64304368648212549044864557371",
+          "denominator": "5070602400912917605986812821504"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "38565604649848850027508279943",
+          "denominator": "81129638414606681695789005144064"
+        },
+        "upper": {
+          "numerator": "38565604649848850027508711993",
+          "denominator": "81129638414606681695789005144064"
+        }
+      }
+    },
+    {
+      "rows": [
+        3200,
+        3328
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "33701763836090621467699315903",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "33701763836090621467699679449",
+          "denominator": "5070602400912917605986812821504"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "42320069317582287448834943289",
+          "denominator": "162259276829213363391578010288128"
+        },
+        "upper": {
+          "numerator": "42320069317582287448835468143",
+          "denominator": "162259276829213363391578010288128"
+        }
+      }
+    },
+    {
+      "rows": [
+        3328,
+        3456
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "10209716632345484142979759293",
+          "denominator": "2535301200456458802993406410752"
+        },
+        "upper": {
+          "numerator": "5104858316172742071489932063",
+          "denominator": "1267650600228229401496703205376"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "777605738402998502159998769",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "24883383628895952069120292523",
+          "denominator": "162259276829213363391578010288128"
+        }
+      }
+    },
+    {
+      "rows": [
+        3456,
+        3584
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "15120033812463304539581174867",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "7560016906231652269790669483",
+          "denominator": "2535301200456458802993406410752"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "72882509231461056638403268089",
+          "denominator": "649037107316853453566312041152512"
+        },
+        "upper": {
+          "numerator": "72882509231461056638404190421",
+          "denominator": "649037107316853453566312041152512"
+        }
+      }
+    },
+    {
+      "rows": [
+        3584,
+        3712
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "60480135249853218158324723611",
+          "denominator": "20282409603651670423947251286016"
+        },
+        "upper": {
+          "numerator": "60480135249853218158325347887",
+          "denominator": "20282409603651670423947251286016"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "72882509231461056638403294731",
+          "denominator": "649037107316853453566312041152512"
+        },
+        "upper": {
+          "numerator": "72882509231461056638404181459",
+          "denominator": "649037107316853453566312041152512"
+        }
+      }
+    },
+    {
+      "rows": [
+        3712,
+        3840
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "40838866529381936571919070753",
+          "denominator": "10141204801825835211973625643008"
+        },
+        "upper": {
+          "numerator": "40838866529381936571919445197",
+          "denominator": "10141204801825835211973625643008"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "49766767257791904138239975759",
+          "denominator": "324518553658426726783156020576256"
+        },
+        "upper": {
+          "numerator": "49766767257791904138240566647",
+          "denominator": "324518553658426726783156020576256"
+        }
+      }
+    },
+    {
+      "rows": [
+        3840,
+        3968
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "33701763836090621467699358757",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "33701763836090621467699665159",
+          "denominator": "5070602400912917605986812821504"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "42320069317582287448835001985",
+          "denominator": "162259276829213363391578010288128"
+        },
+        "upper": {
+          "numerator": "42320069317582287448835448731",
+          "denominator": "162259276829213363391578010288128"
+        }
+      }
+    },
+    {
+      "rows": [
+        3968,
+        4096
+      ],
+      "B_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "64304368648212549044863951969",
+          "denominator": "5070602400912917605986812821504"
+        },
+        "upper": {
+          "numerator": "64304368648212549044864524285",
+          "denominator": "5070602400912917605986812821504"
+        }
+      },
+      "B_square_squared_frobenius_sum": {
+        "lower": {
+          "numerator": "19282802324924425013754159199",
+          "denominator": "40564819207303340847894502572032"
+        },
+        "upper": {
+          "numerator": "38565604649848850027508699297",
+          "denominator": "81129638414606681695789005144064"
+        }
+      }
+    }
+  ],
+  "created_utc": "2026-09-07T17:02:23.329595+00:00",
+  "elapsed_seconds": 895.3501295999995,
+  "strict_norm_upper_bounds": {
+    "B": {
+      "numerator": "61",
+      "denominator": "100"
+    },
+    "B_square": {
+      "numerator": "19",
+      "denominator": "200"
+    },
+    "P_minus_B": {
+      "numerator": "93",
+      "denominator": "1000"
+    }
+  },
+  "analytic_inputs": {
+    "target_derivative_bound": 500,
+    "source_derivative_bound": 900,
+    "source": "manuscript.tex, Appendix A: cert:target-derivative and cert:source-derivative",
+    "note": "These analytic bounds and the kernel identity are proved in the manuscript."
+  },
+  "continuous_bounds": {
+    "midpoint_error_squared_upper": {
+      "numerator": "216875",
+      "denominator": "25165824"
+    },
+    "P_norm_upper": {
+      "numerator": "703",
+      "denominator": "1000"
+    },
+    "P_squared_norm_upper": {
+      "numerator": "217109",
+      "denominator": "1000000"
+    },
+    "inverse_norm_upper": {
+      "numerator": "1203000",
+      "denominator": "32891"
+    }
+  }
+}
